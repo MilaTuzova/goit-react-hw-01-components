@@ -1,0 +1,40 @@
+.title {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0px;
+    border-bottom: 2px solid violet;
+    background-color: rgba(128, 128, 128, 0.384);
+}
+
+.section {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    width: 350px;
+    border: 2px solid violet;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.itemOfList {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    /* text-transform: uppercase; */
+    background-color: rgba(62, 139, 190, 0.486);
+    border: 1px solid violet;
+}

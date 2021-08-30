@@ -1,19 +1,30 @@
 import { Profile } from './Profile/Profile';
 import user from '../data/user.json';
+import { Statistics } from './Statistics/Statistics';
+import statisticalData from '../data/statistical-data.json'
+import { Container } from './App.styled';
 
 
 export const App =() => {
-  return <div> 
-    <Profile 
-    name={user.name}
-   avatar={user.avatar}
-   tag={user.tag}
-   location={user.location}
-   stats={user.stats}
+  return  ( 
+    <Container>
+<Profile 
+name={user.name}
+avatar={user.avatar}
+tag={user.tag}
+location={user.location}
+stats={user.stats}
+ />
 
-   />
-   </div>
+<Statistics
+  title="Upload stats"
+  stats={statisticalData}
+ />
 
+ {/* <Statistics stats={statisticalData} /> */}
+
+    </Container>
+  );
 }
 
 

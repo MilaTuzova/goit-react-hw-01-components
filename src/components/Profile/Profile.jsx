@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
 export const Profile = ({avatar, name, tag, location, stats}) => {
-console.log({avatar, name, tag, location,stats})
+// console.log({avatar, name, tag, location,stats})
 return <div className={css.card}> 
 <div>
 <img
-      src={avatar}
-      alt={name}
-      className={css.image}
+    src={avatar}
+    className={css.image}
+    alt={name}
     />
 <p className={css.name}>{name}</p>
 <p className={css.text}>{tag}</p>
@@ -38,5 +38,6 @@ Profile.prototype = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.number.isRequired
 }
