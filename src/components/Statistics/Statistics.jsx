@@ -1,30 +1,34 @@
-// import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
+import PropTypes from 'prop-types';
+// import css from './Statistics.module.css';
 import {Statist} from '../Statist/Statist';
+
+import { Section, TitleCard, ListCard } from './Statistics.styled';
 
 
 export const Statistics = ({stats, title}) => {
-   
-    return <div className={css.section}> 
-        
+   return <Section> 
+          
+  <TitleCard > {title} </TitleCard>
+
+  <ListCard> 
+
+  {stats.map(({id, label,percentage}) => (
+      <li key={id}>
+
+      <Statist 
+  label={label}
+  percentage={percentage}
+      />
       
-  <h2 className={css.title}>{title}</h2>
-
-  <ul className={css.list}> 
-  {stats.map(stat => (
-      <li key={stat.id}  >
-
-<Statist 
-  label={stat.label}
-  percentage={stat.percentage}
-   />
- 
-    
-
       </li>
   ))}
 
-  </ul>
-                
-        </div>
+  </ListCard>
+
+        </Section>
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.array.isRequired
 }

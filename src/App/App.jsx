@@ -1,7 +1,12 @@
-import { Profile } from './Profile/Profile';
+import { Profile } from '../components/Profile/Profile';
 import user from '../data/user.json';
-import { Statistics } from './Statistics/Statistics';
-import statisticalData from '../data/statistical-data.json'
+
+import { Statistics } from '../components/Statistics/Statistics';
+import statisticalData from '../data/statistical-data.json';
+
+import { Friends } from '../components/FriendList/FriendList';
+import friendsData from '../data/fiends.json';
+
 import { Container } from './App.styled';
 
 
@@ -21,11 +26,14 @@ stats={user.stats}
   stats={statisticalData}
  />
 
- {/* <Statistics stats={statisticalData} /> */}
-
+<Friends
+friends={friendsData}
+/>
+  
     </Container>
-  );
-}
+
+  )
+};
 
 
 
