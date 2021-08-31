@@ -31,17 +31,13 @@ return <ProfileCard>
 </ProfileStats> 
 
 </ProfileCard>
-
 }
 
-Profile.prototype = {
+Profile.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-    stats: {
-      followers: PropTypes.number.isRequired,
-      views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired
-}
-}
+    stats: PropTypes.objectOf(PropTypes.number),
+  }
+

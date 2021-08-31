@@ -17,10 +17,11 @@ justify-content: flex-start;
 text-align: center;
 margin-top: 20px;
 margin-left: auto;
-padding: 10px 10px 10px 10px;
+padding: 5px 5px 5px 5px;
 border: 2px solid violet;
 border-radius: 4px;
 box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+cursor: pointer;
 `;
 
 export const FriendStatus = styled.span`

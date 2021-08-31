@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 // import css from './Statistics.module.css';
-import {Statist} from '../Statist/Statist';
+import { Statist } from 'components/Statist/Statist';
 
 import { Section, TitleCard, ListCard } from './Statistics.styled';
 
@@ -12,7 +12,7 @@ export const Statistics = ({stats, title}) => {
 
   <ListCard> 
 
-  {stats.map(({id, label,percentage}) => (
+  {stats.map(({id, label, percentage}) => (
       <li key={id}>
 
       <Statist 

@@ -7,6 +7,9 @@ import statisticalData from '../data/statistical-data.json';
 import { Friends } from '../components/FriendList/FriendList';
 import friendsData from '../data/fiends.json';
 
+import { History } from 'components/TransactionHistory/TransactionHistory';
+import historyStatData from '../data/transactions.json';
+
 import { Container } from './App.styled';
 
 
@@ -30,10 +33,30 @@ stats={user.stats}
 friends={friendsData}
 />
   
+<History
+items={historyStatData}
+/>
+
     </Container>
 
   )
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

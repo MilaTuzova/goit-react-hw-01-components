@@ -9,7 +9,7 @@ export const Statist =({label, percentage}) => {
     <span>{label}</span>
     <span>{percentage} %</span> 
     </ItemList>
-}
+    }
 
 Statist.propTypes = {
     label: PropTypes.string.isRequired,
