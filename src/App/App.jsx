@@ -12,54 +12,25 @@ import historyStatData from '../data/transactions.json';
 
 import { Container } from './App.styled';
 
-
-export const App =() => {
-  return  ( 
+export const App = () => {
+  return (
     <Container>
-<Profile 
-name={user.name}
-avatar={user.avatar}
-tag={user.tag}
-location={user.location}
-stats={user.stats}
- />
+      <Profile
+        name={user.name}
+        avatar={user.avatar}
+        tag={user.tag}
+        location={user.location}
+        stats={user.stats}
+      />
 
-<Statistics
-  title="Upload stats"
-  stats={statisticalData}
- />
+      <Statistics title="Upload stats" stats={statisticalData} />
 
-<Friends
-friends={friendsData}
-/>
-  
-<History
-items={historyStatData}
-/>
+      <Friends friends={friendsData} />
 
+      <History items={historyStatData} />
     </Container>
-
-  )
+  );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import logo from './logo.svg';
 // import './App.css';
