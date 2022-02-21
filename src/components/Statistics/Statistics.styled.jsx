@@ -4,20 +4,20 @@ export const Section = styled.div`
   margin-top: 35px;
   margin-bottom: 15px;
   width: 350px;
-  border: 2px solid violet;
-  border-radius: 6px;
-  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border-radius: 2px;
+  box-shadow: 0px 0px 1px 4px grey;
+  background-color: while;
 `;
 
 export const TitleCard = styled.div`
+  color: #02883a;
   font-size: 25px;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0px;
-  border-bottom: 2px solid violet;
-  background-color: rgba(128, 128, 128, 0.384);
 `;
 
 export const ListCard = styled.ul`
@@ -28,6 +28,3 @@ export const ListCard = styled.ul`
   margin: 0px;
   list-style: none;
 `;
-
-// export const Statist = styled.li`
-// `;

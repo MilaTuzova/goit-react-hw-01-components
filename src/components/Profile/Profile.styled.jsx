@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 
-export const ProfileCard = styled.div`
+export const Card = styled.div`
   padding-top: 50px;
   margin: auto;
   width: 350px;
   border-radius: 6px;
-  border: 2px solid violet;
-  background-color: rgba(184, 184, 184, 0.705);
+  border: 4px solid grey;
+  background-color: #91b38a;
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 `;
 
-export const ProfileImg = styled.img`
+export const Img = styled.img`
   margin: 0;
   display: block;
   width: 100%;
@@ -22,21 +22,22 @@ export const ProfileImg = styled.img`
   width: 60%;
 `;
 
-export const ProfileName = styled.p`
+export const Name = styled.p`
   text-align: center;
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #18469b;
 `;
 
-export const ProfileText = styled.p`
+export const Text = styled.p`
   text-align: center;
   font-size: 20px;
   font-weight: 500;
-  color: grey;
+  color: #145707;
 `;
 
-export const ProfileStats = styled.ul`
+export const Stats = styled.ul`
   display: flex;
   width: 100;
   flex-direction: row;
@@ -44,26 +45,29 @@ export const ProfileStats = styled.ul`
   background-color: white;
   padding-left: 0px;
   margin: 0px;
+  border-top: 4px solid grey;
 `;
 
-export const ProfileStatusItem = styled.li`
+export const StatusItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const ProfileLabel = styled.span`
-  color: rgb(68, 67, 67);
+export const Label = styled.span`
+  color: rgb(5, 133, 73);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   padding-bottom: 15px;
   padding-top: 15px;
 `;
 
-export const ProfileQuality = styled.span`
+export const Quality = styled.span`
   font-size: 18px;
   text-align: center;
   padding-bottom: 15px;
   padding-top: 15px;
+  color: black;
+  font-weight: 700;
 `;

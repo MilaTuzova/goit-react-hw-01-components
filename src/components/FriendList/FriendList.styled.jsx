@@ -16,11 +16,11 @@ export const FriendItem = styled.li`
   justify-content: flex-start;
   text-align: center;
   margin-top: 20px;
-  margin-left: auto;
+  /*margin-left: auto;*/
   padding: 5px 5px 5px 5px;
-  border: 2px solid violet;
+
   border-radius: 4px;
-  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  box-shadow: 0 0 20px 20px rgba(221, 221, 221, 1);
   cursor: pointer;
 `;
 
@@ -33,14 +33,17 @@ export const FriendStatus = styled.span`
 `;
 
 export const FriendImg = styled.img`
-  widht: 100%;
-  margin: 10px 10px;
+  display: block;
+  height: 100%;
+  margin: 5px 5px;
+  border-radius: 6%;
 `;
 
 export const FriendName = styled.p`
+  display: inline;
   text-align: center;
   font-size: 25px;
   font-weight: 400;
-  text-transform: uppercase;
-  margin: auro 10px auto 10px;
+  /*text-transform: uppercase;*/
+  margin: auto 20px auto 10px;
 `;

@@ -2,40 +2,47 @@ import PropTypes from 'prop-types';
 // import css from './Profile.module.css';
 
 import {
-  ProfileCard,
-  ProfileImg,
-  ProfileName,
-  ProfileText,
-  ProfileStats,
-  ProfileStatusItem,
-  ProfileLabel,
-  ProfileQuality,
+  Card,
+  Img,
+  Name,
+  Text,
+  Stats,
+  StatusItem,
+  Label,
+  Quality,
 } from './Profile.styled';
 
-export const Profile = ({ avatar, name, tag, location, stats }) => {
-  // console.log({avatar, name, tag, location,stats})
-  return (
-    <ProfileCard>
-      <ProfileImg src={avatar} alt={name} />
-      <ProfileName>{name}</ProfileName>
-      <ProfileText>{tag}</ProfileText>
-      <ProfileText>{location}</ProfileText>
+import defaultImg from './fox.jpg';
 
-      <ProfileStats>
-        <ProfileStatusItem>
-          <ProfileLabel>Followers</ProfileLabel>
-          <ProfileQuality>{stats.followers}</ProfileQuality>
-        </ProfileStatusItem>
-        <ProfileStatusItem>
-          <ProfileLabel>Views</ProfileLabel>
-          <ProfileQuality>{stats.views}</ProfileQuality>
-        </ProfileStatusItem>
-        <ProfileStatusItem>
-          <ProfileLabel>Likes</ProfileLabel>
-          <ProfileQuality>{stats.likes}</ProfileQuality>
-        </ProfileStatusItem>
-      </ProfileStats>
-    </ProfileCard>
+export const Profile = ({
+  avatar = defaultImg,
+  name = 'не известно',
+  tag,
+  location,
+  stats,
+}) => {
+  return (
+    <Card>
+      <Img src={avatar} alt={name} />
+      <Name>{name}</Name>
+      <Text>{tag}</Text>
+      <Text>{location}</Text>
+
+      <Stats>
+        <StatusItem>
+          <Label>Followers</Label>
+          <Quality>{stats.followers}</Quality>
+        </StatusItem>
+        <StatusItem>
+          <Label>Views</Label>
+          <Quality>{stats.views}</Quality>
+        </StatusItem>
+        <StatusItem>
+          <Label>Likes</Label>
+          <Quality>{stats.likes}</Quality>
+        </StatusItem>
+      </Stats>
+    </Card>
   );
 };
 

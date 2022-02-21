@@ -6,7 +6,7 @@ export const Td = styled.td`
   text-align: center;
   font-size: 15px;
   font-weight: 400;
-  background-color: violet;
+  background-color: #91b38a;
 `;
 
 export const HeadTabl = styled.th`
