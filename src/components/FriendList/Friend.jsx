@@ -5,9 +5,9 @@ import {
   FriendName,
   FriendItem,
 } from './FriendList.styled';
-//import defaultImg from './fox.jpg';
+import defaultImg from './fox.jpg';
 
-export const Friend = ({ isOnline, name, avatar }) => {
+export const Friend = ({ isOnline, name, avatar = defaultImg }) => {
   return (
     <FriendItem>
       <FriendStatus isOnline={isOnline}>{isOnline}</FriendStatus>
@@ -17,7 +17,7 @@ export const Friend = ({ isOnline, name, avatar }) => {
   );
 };
 
-Friend.PropeTypes = {
+Friend.propTypes = {
   isOnline: PropTypes.bool.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,

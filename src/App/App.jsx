@@ -9,7 +9,6 @@ import friendsData from '../data/fiends.json';
 
 import { History } from 'components/TransactionHistory/TransactionHistory';
 import historyStatData from '../data/transactions.json';
-
 import { Container } from './App.styled';
 
 export const App = () => {

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { Td } from './TransactionHistory.styled';
 
 export const TransAction = ({ type, amount, currency }) => {

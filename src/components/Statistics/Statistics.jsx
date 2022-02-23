@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-// import css from './Statistics.module.css';
 import { Statist } from 'components/Statist/Statist';
-
 import { Section, TitleCard, ListCard } from './Statistics.styled';
 
 export const Statistics = ({ stats, title }) => {
